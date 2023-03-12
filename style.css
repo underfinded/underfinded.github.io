@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background: #000;
+    font-family: 'Arial';
+    cursor: default;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Arial;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.col {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    font-size: 150px;
+    text-align: center;
+    border-radius: 10px;
+    background: #301758;
+    color: rgb(58, 170, 127);
+    cursor: pointer;
+}
+
+.stats{
+    background: rgba(92, 46, 46, 0.329);
+    width: 610px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    color: rgb(160, 160, 160);
+    font-size: 32px;
+}
+
+.result{
+    width: 610px;
+    height: 45px;
+    background: rgba(92, 46, 46, 0.329);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    color: rgb(160, 160, 160);
+    font-size: 32px;
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.stats__user{
+    height: 40px;
+}
+
+.active{
+    border-bottom: 3px solid green;
+}
+.gg{
+    color: rgb(177, 27, 27);
+}
+.aga{
+    cursor: default;
+}
+.win-color{
+    background: #41b629;
+}
+@media screen and (max-width: 800px) {
+    .col{
+        width: 130px;
+        height: 130px;
+        font-size: 100px;
+    }
+    .result{
+        width: 400px;
+        font-size: 25px;
+    }
+    .stats{
+        width: 400px;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .col{
+        width: 100px;
+        height: 100px;
+        font-size: 80px;
+    }
+    .result{
+        width: 310px;
+        font-size: 25px;
+    }
+    .stats{
+        width: 310px;
+        height: 44px;
+        font-size: 25px;
+        padding: 0;
+    }
+    .d-flex{
+        padding: 5px;
+    }
+    .stats__user {
+        height: 30px;
+    }
+}
